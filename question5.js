@@ -6,10 +6,10 @@ var Lower = 'abcdefghijklmnopqrstuvwxyz';
 var result = [];
 
 for ( let x = 0; x<str.length; x++){
-  if(Upper.indexOf(str[x]) !== -1){
+  if(Upper.includes(str[x ])){
     result.push(str[x].toLowerCase());
   }
-  else if(Lower.indexOf(str[x]) !== -1)
+  else if(Lower.includes(str[x]))
     {
       result.push(str[x].toUpperCase());
     } else {
