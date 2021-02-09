@@ -22,7 +22,9 @@ function differenceOf2Arrays(arr1, arr2){
   for(i in arr2){
     if(arr1.indexOf(arr2[i]) === -1) temp.push(arr2[i])
   }
-  return temp.sort((a,b) => a-b)
+
+  return temp
+  
  
 }
 
