@@ -12,20 +12,25 @@
 // console.log(differArray([1,2,3,5], [1,2,3,4,5]))
 
 function differenceOf2Arrays(arr1, arr2){
-  var temp = [];
-  arr1 = arr1.toString().split(',').map(Number);
-  arr2 = arr2.toString().split(',').map(Number);
+  var combo = arr1.concat(arr2);
 
-  for(var i in arr1) {
-    if(arr2.indexOf(arr1[i]) === -1) temp.push(arr1[i])
-  }
-  for(i in arr2){
-    if(arr1.indexOf(arr2[i]) === -1) temp.push(arr2[i])
-  }
+  return combo.filter(function(num){
+    if(arr1.indexOf(num) === -1 || arr2.indexOf(num) === -1){
+      return num
+    }
+  })
+  // var temp = [];
+  // arr1 = arr1.toString().split(',').map(Number);
+  // arr2 = arr2.toString().split(',').map(Number);
 
-  return temp
-  
- 
+  // for(var i in arr1) {
+  //   if(arr2.indexOf(arr1[i]) === -1) temp.push(arr1[i])
+  // }
+  // for(i in arr2){
+  //   if(arr1.indexOf(arr2[i]) === -1) temp.push(arr2[i])
+  // }
+
+  // return temp
 }
 
-console.log(differenceOf2Arrays([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
+differenceOf2Arrays([1, 2, 3, 4, 5], [1,2,3,4,5,6]);
