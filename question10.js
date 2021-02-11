@@ -15,7 +15,9 @@ function differenceOf2Arrays(arr1, arr2){
   var combo = arr1.concat(arr2);
 
   return combo.filter(function(num){
+    console.log(num)
     if(arr1.indexOf(num) === -1 || arr2.indexOf(num) === -1){
+      console.log(num)
       return num
     }
   })
@@ -33,4 +35,4 @@ function differenceOf2Arrays(arr1, arr2){
   // return temp
 }
 
-differenceOf2Arrays([1, 2, 3, 4, 5], [1,2,3,4,5,6]);
+differenceOf2Arrays([1, 2, 6, 4, 5], [1,2,3,9,5,7]);
