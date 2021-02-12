@@ -1,4 +1,4 @@
-// factorialize
+// factorialize (freeCodeCamp)
 
 function factorialize(num){
   var result = 1

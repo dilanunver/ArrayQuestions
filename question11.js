@@ -1,4 +1,4 @@
-// sum All Numbers in a Range
+// sum All Numbers in a Range (freeCodeCamp)
 function sumAll(arr){
   var max = Math.max(arr[0], arr[1]);
   var min = Math.min(arr[0], arr[1]);

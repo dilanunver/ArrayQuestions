@@ -1,4 +1,4 @@
-//Repeat a String
+//Repeat a String (freeCodeCamp)
 
 // function repeatString(str,num){
 //   if(num<0) return '';

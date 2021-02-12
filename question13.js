@@ -1,4 +1,4 @@
-//finding longest word in array
+//finding longest word in array (freeCodeCamp)
 
 function findLongestWordLength(str) {
 

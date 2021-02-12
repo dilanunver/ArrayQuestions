@@ -1,4 +1,4 @@
-// falsy bouncer
+// falsy bouncer (freeCodeCamp)
 
 // function bouncer(arr){
 //   var truthies = [];

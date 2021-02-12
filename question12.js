@@ -1,4 +1,4 @@
-// Reversing a string
+// Reversing a string (freeCodeCamp)
 
 function reverseString(str) {
   var arr = [];

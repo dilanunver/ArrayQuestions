@@ -1,4 +1,4 @@
-//find the differences of two arrays 
+//find the differences of two arrays  (freeCodeCamp)
 
 // function differArray(arr1,arr2){
 //   var newArr = arr1.concat(arr2);
