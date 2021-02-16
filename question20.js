@@ -1,33 +1,57 @@
-// Roman Numeral Converter (Freecodecamp)
+//Roman Numeral Converter (Freecodecamp)
 function convertToRoman(num){
-  var romanToNum = {
-    M: 1000,
-    CM: 900,
-    D: 500,
-    CD: 400,
-    C: 100,
-    XC: 90, 
-    L: 50,
-    XL: 40,
-    X: 10,
-    V: 5,
-    IV: 4,
-    I: 1
-  };
-
   var roman = '';
+  var romanNum = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX','V', 'IV', 'I']
 
-  for(var key in romanToNum){
-   // console.log("key: ", key)
-   // console.log("value: ", romanToNum[key]);
-    while(num >= romanToNum[key]){
-      roman += key;
-      num -= romanToNum[key]
+  var numbers = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+
+
+  for(var i = 0; i<numbers.length; i++){
+    while(numbers[i] <= num){
+      roman = roman + romanNum[i];
+      num = num - numbers[i]
     }
   }
   return roman;
 }
-convertToRoman(11)
+console.log(convertToRoman(36))
+convertToRoman(36)
+
+
+
+// var convertToRoman = function(num) {
+//   var numbers = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+//   var romanNumeral = [
+//     "M",
+//     "CM",
+//     "D",
+//     "CD",
+//     "C",
+//     "XC",
+//     "L",
+//     "XL",
+//     "X",
+//     "IX",
+//     "V",
+//     "IV",
+//     "I"
+//   ];
+
+//   var roman = "";
+
+//   for (var i = 0; i < numbers.length; i++) {
+//     while (numbers[i] <= num) {
+//       roman += romanNumeral[i];
+//       num -= numbers[i];
+//     }
+//   }
+
+//   return roman;
+// };
+
+// // test here
+// convertToRoman(9);
+// console.log(convertToRoman(9))
 
 
 // function findID(num){ 
