@@ -1,13 +1,14 @@
-function countdown(myArray, n){
+function countdown (n){
   if(n  < 1) {
   return []
   }else {
-     myArray.push(n);
-   countdown(myArray, n-1)
+    const countArray = countdown(n-1)
+    countArray.unshift(n);
+    return countArray
   }
 
 }
-console.log(countdown(myArray,5))
+console.log(countdown(5))
 
 // function countup(n) {
 //   if (n < 1) {
